@@ -1,0 +1,119 @@
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #333;
+  background-color: smokewhite;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+.container > * {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 20px;
+  height: 120px;
+  position: relative;
+}
+
+nav .logo {
+  margin-right: auto;
+}
+
+nav .links a {
+  margin: 0 0 0 10px;
+}
+
+nav + div {
+  height: calc(100vh - 120px - 100px);
+  padding: 50px;
+  overflow: hidden scroll;
+}
+
+footer {
+  border-top: 1px solid #b3b3b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: grey;
+}
+
+footer span {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: royalblue;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+p {
+  padding: 0 0 20px;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found a {
+  color: blue;
+}
+
+.user {
+  background-color: aquamarine;
+  margin: 5px 0 10px;
+  padding: 10px 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.user p {
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.user:hover {
+  cursor: pointer;
+  border-left: 10px solid mediumaquamarine;
+  padding: 10px;
+}
+
+.user-details p {
+  padding-bottom: 10px;
+}
